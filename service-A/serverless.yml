@@ -1,0 +1,23 @@
+service: service-A
+
+frameworkVersion: '2'
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+  tracing:
+    apiGateway: true
+    lambda: true
+
+functions:
+  hello:
+    handler: handler.hello
+    environment:
+      SERVICE_B_URL: ${cf:service-B-dev.ServiceEndpoint}
+
+    events:
+      - http:
+          path: /
+          method: get

@@ -1,0 +1,14 @@
+{
+  "name": "service-b",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "destroy": "serverless remove"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "serverless": "^2.55.0"
+  }
+}
