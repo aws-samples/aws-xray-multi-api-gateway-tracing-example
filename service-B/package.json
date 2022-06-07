@@ -9,6 +9,6 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "serverless": "^2.55.0"
+    "serverless": "^3.19.0"
   }
 }

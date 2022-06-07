@@ -13,6 +13,6 @@
     "axios": "^0.21.4"
   },
   "devDependencies": {
-    "serverless": "^2.55.0"
+    "serverless": "^3.19.0"
   }
 }
